@@ -17,3 +17,5 @@ Short 3V3_NRF <--- >3V3EXT if assembled LD117 regulator and feed it via EXT_PWR_
 
 ####PWR_OUT1, PWR_OUT2 headers 
 may be used to feed any external 3.3 V device
+
+<a href="https://oshpark.com/shared_projects/ncBBwenI"><img src="https://a800d827b6de8403a51e-6ffc2e718631809086ea40332b2055f7.ssl.cf1.rackcdn.com/assets/badge-5b7ec47045b78aef6eb9d83b3bac6b1920de805e9a0c227658eac6e19a045b9c.png" alt="Order from OSH Park"></img></a>
