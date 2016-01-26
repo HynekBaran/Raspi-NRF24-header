@@ -1,8 +1,11 @@
 # Raspi-NRF24-header
 Raspberry Pi NRF24L01 header (incl. 5V to 3V3 voltage regulator and additional SPI header)
 
-Modified version of
-https://www.openhardware.io/view/17/Raspberry-Pi2-GPIO-interface-for-NRF24L01
+This PCB is modified version of
+https://www.openhardware.io/view/17/Raspberry-Pi2-GPIO-interface-for-NRF24L01.
+
+May be used as MySensors gateway
+https://github.com/mysensors/Raspberry
 
 ####PWR_SEL jumper 
 selects power source:
