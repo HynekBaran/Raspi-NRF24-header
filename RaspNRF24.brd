@@ -1897,19 +1897,14 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="3V3_EXT" class="1">
 <contactref element="IC1" pad="4"/>
 <contactref element="PWR_SEL" pad="3"/>
-<wire x1="5.715" y1="8.89" x2="1.27" y2="8.89" width="0.4064" layer="16"/>
-<wire x1="6.985" y1="7.62" x2="5.715" y2="8.89" width="0.4064" layer="16"/>
-<wire x1="6.985" y1="7.62" x2="7.239" y2="7.849" width="0.4064" layer="16"/>
+<wire x1="1.27" y1="8.89" x2="7.239" y2="7.849" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="5V" class="1">
 <contactref element="IC1" pad="3"/>
 <contactref element="C5" pad="+"/>
 <contactref element="EXT_PWR_IN" pad="1"/>
-<wire x1="3.302" y1="1.27" x2="4.7625" y2="1.27" width="0.4064" layer="16"/>
-<wire x1="4.7625" y1="1.27" x2="4.939" y2="1.549" width="0.4064" layer="16"/>
-<wire x1="2.54" y1="3.81" x2="4.7625" y2="1.5875" width="0.4064" layer="16"/>
-<wire x1="1.27" y1="3.81" x2="2.54" y2="3.81" width="0.4064" layer="16"/>
-<wire x1="4.7625" y1="1.5875" x2="4.939" y2="1.549" width="0.4064" layer="16"/>
+<wire x1="3.302" y1="1.27" x2="4.939" y2="1.549" width="0" layer="19" extent="16-16"/>
+<wire x1="1.27" y1="3.81" x2="3.302" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND" class="1">
 <contactref element="IC1" pad="1"/>
@@ -1935,62 +1930,52 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="NRF24L01" pad="8"/>
 <contactref element="RPI" pad="9"/>
 <contactref element="EXT_PWR_IN" pad="2"/>
+<wire x1="13.97" y1="16.51" x2="11.43" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="13.843" y1="13.97" x2="13.97" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="11.43" y1="13.97" x2="13.843" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="8.89" x2="13.843" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="19.05" x2="11.43" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="1.27" y1="16.51" x2="6.35" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="11.684" y1="1.905" x2="13.97" y2="8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="9.539" y1="1.549" x2="11.684" y2="1.905" width="0" layer="19" extent="16-16"/>
+<wire x1="1.27" y1="1.27" x2="9.539" y2="1.549" width="0" layer="19" extent="16-16"/>
+<wire x1="1.27" y1="6.35" x2="1.27" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CSN">
 <contactref element="RPI" pad="8"/>
 <contactref element="NRF24L01" pad="5"/>
-<wire x1="10.16" y1="12.7" x2="8.89" y2="11.43" width="0.2032" layer="16"/>
-<wire x1="10.16" y1="17.78" x2="10.16" y2="12.7" width="0.2032" layer="16"/>
-<wire x1="11.43" y1="19.05" x2="10.16" y2="17.78" width="0.2032" layer="16"/>
+<wire x1="8.89" y1="11.43" x2="11.43" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCLK">
 <contactref element="RPI" pad="7"/>
 <contactref element="NRF24L01" pad="4"/>
 <contactref element="SPI" pad="4"/>
-<wire x1="7.62" y1="15.24" x2="6.35" y2="13.97" width="0.2032" layer="1"/>
-<wire x1="10.16" y1="15.24" x2="7.62" y2="15.24" width="0.2032" layer="1"/>
-<wire x1="11.43" y1="16.51" x2="10.16" y2="15.24" width="0.2032" layer="1"/>
-<wire x1="10.16" y1="20.32" x2="8.89" y2="21.59" width="0.2032" layer="1"/>
-<wire x1="10.16" y1="17.78" x2="10.16" y2="20.32" width="0.2032" layer="1"/>
-<wire x1="11.43" y1="16.51" x2="10.16" y2="17.78" width="0.2032" layer="1"/>
+<wire x1="11.43" y1="16.51" x2="8.89" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="13.97" x2="11.43" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="RPI" pad="3"/>
 <contactref element="NRF24L01" pad="3"/>
 <contactref element="SPI" pad="2"/>
-<wire x1="7.62" y1="12.7" x2="6.35" y2="11.43" width="0.2032" layer="16"/>
-<wire x1="7.62" y1="14.2875" x2="7.62" y2="12.7" width="0.2032" layer="16"/>
-<wire x1="6.35" y1="15.5575" x2="7.62" y2="14.2875" width="0.2032" layer="16"/>
-<wire x1="6.35" y1="16.51" x2="6.35" y2="15.5575" width="0.2032" layer="16"/>
-<wire x1="5.08" y1="20.32" x2="3.81" y2="21.59" width="0.2032" layer="1"/>
-<wire x1="5.08" y1="17.78" x2="5.08" y2="20.32" width="0.2032" layer="1"/>
-<wire x1="6.35" y1="16.51" x2="5.08" y2="17.78" width="0.2032" layer="1"/>
+<wire x1="6.35" y1="16.51" x2="3.81" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="11.43" x2="6.35" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO">
 <contactref element="RPI" pad="5"/>
 <contactref element="NRF24L01" pad="2"/>
 <contactref element="SPI" pad="3"/>
-<wire x1="5.08" y1="15.24" x2="3.81" y2="13.97" width="0.2032" layer="1"/>
-<wire x1="6.6675" y1="15.24" x2="5.08" y2="15.24" width="0.2032" layer="1"/>
-<wire x1="7.9375" y1="16.51" x2="6.6675" y2="15.24" width="0.2032" layer="1"/>
-<wire x1="8.89" y1="16.51" x2="7.9375" y2="16.51" width="0.2032" layer="1"/>
-<wire x1="7.62" y1="20.32" x2="6.35" y2="21.59" width="0.2032" layer="1"/>
-<wire x1="7.62" y1="17.78" x2="7.62" y2="20.32" width="0.2032" layer="1"/>
-<wire x1="8.89" y1="16.51" x2="7.62" y2="17.78" width="0.2032" layer="1"/>
+<wire x1="8.89" y1="16.51" x2="6.35" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="13.97" x2="8.89" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IRQ">
 <contactref element="RPI" pad="2"/>
 <contactref element="NRF24L01" pad="1"/>
-<wire x1="5.08" y1="12.7" x2="3.81" y2="11.43" width="0.2032" layer="16"/>
-<wire x1="5.08" y1="17.78" x2="5.08" y2="12.7" width="0.2032" layer="16"/>
-<wire x1="3.81" y1="19.05" x2="5.08" y2="17.78" width="0.2032" layer="16"/>
+<wire x1="3.81" y1="11.43" x2="3.81" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CE">
 <contactref element="RPI" pad="6"/>
 <contactref element="NRF24L01" pad="6"/>
-<wire x1="7.62" y1="15.24" x2="8.89" y2="13.97" width="0.2032" layer="16"/>
-<wire x1="7.62" y1="17.78" x2="7.62" y2="15.24" width="0.2032" layer="16"/>
-<wire x1="8.89" y1="19.05" x2="7.62" y2="17.78" width="0.2032" layer="16"/>
+<wire x1="8.89" y1="13.97" x2="8.89" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V3_NRF" class="1">
 <contactref element="C3" pad="+"/>
@@ -2000,29 +1985,22 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="PWR_OUT_1" pad="1"/>
 <contactref element="PWR_OUT_2" pad="1"/>
 <contactref element="SPI" pad="1"/>
-<wire x1="1.27" y1="21.59" x2="1.27" y2="19.05" width="0.4064" layer="1"/>
-<wire x1="11.43" y1="11.43" x2="13.843" y2="11.43" width="0.4064" layer="16"/>
-<wire x1="3.175" y1="9.525" x2="1.27" y2="11.43" width="0.4064" layer="1"/>
-<wire x1="9.525" y1="9.525" x2="3.175" y2="9.525" width="0.4064" layer="1"/>
-<wire x1="11.43" y1="11.43" x2="9.525" y2="9.525" width="0.4064" layer="1"/>
-<wire x1="12.7" y1="6.35" x2="13.97" y2="6.35" width="0.4064" layer="1"/>
-<wire x1="9.525" y1="9.525" x2="12.7" y2="6.35" width="0.4064" layer="1"/>
-<wire x1="14.2875" y1="6.0325" x2="14.2875" y2="1.905" width="0.4064" layer="1"/>
-<wire x1="13.97" y1="6.35" x2="14.2875" y2="6.0325" width="0.4064" layer="1"/>
-<wire x1="14.2875" y1="1.905" x2="14.224" y2="1.905" width="0.4064" layer="1"/>
-<wire x1="2.54" y1="17.78" x2="1.27" y2="19.05" width="0.4064" layer="1"/>
-<wire x1="2.54" y1="12.7" x2="2.54" y2="17.78" width="0.4064" layer="1"/>
-<wire x1="1.27" y1="11.43" x2="2.54" y2="12.7" width="0.4064" layer="1"/>
+<wire x1="11.43" y1="11.43" x2="13.843" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="6.35" x2="13.843" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="14.224" y1="1.905" x2="13.97" y2="6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="1.27" y1="11.43" x2="11.43" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="1.27" y1="19.05" x2="1.27" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="1.27" y1="21.59" x2="1.27" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V3PI" class="1">
 <contactref element="RPI" pad="1"/>
 <contactref element="PWR_SEL" pad="1"/>
-<wire x1="3.81" y1="16.51" x2="1.27" y2="13.97" width="0.4064" layer="16"/>
+<wire x1="1.27" y1="13.97" x2="3.81" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CE2">
 <contactref element="RPI" pad="10"/>
 <contactref element="SPI" pad="6"/>
-<wire x1="13.97" y1="21.59" x2="13.97" y2="19.05" width="0.2032" layer="16"/>
+<wire x1="13.97" y1="19.05" x2="13.97" y2="21.59" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
