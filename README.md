@@ -27,7 +27,7 @@ for details.
  usermod -a -G tty fhem
  ```
  
- ####Software usage
+#####Usage
  
  Your gateway as available as `/dev/ttyMySensorsGateway`
 
