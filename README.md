@@ -11,17 +11,20 @@ for details.
 
 #####Installation of MySensor's gateway
 ``` bash
-usermod -a -G tty fhem
+ # NRF24 Libraries
  apt install git make g++ rsyslog
  git clone "https://github.com/TMRh20/RF24.git"
  cd RF24/
  make all
  cd ..
+ # MySensor gateway for Raspberry Pi
  git clone "https://github.com/mysensors/Raspberry.git"
  cd Raspberry/
  make all
  sudo make install
  sudo make enable-gwserial
+ # if using FHEM controller, allow it to access /dev/ttyMySensorsGateway
+ usermod -a -G tty fhem
  ```
  
 ####PWR_SEL jumper 
