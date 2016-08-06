@@ -4,9 +4,24 @@ Raspberry Pi NRF24L01 header (incl. 5V to 3V3 voltage regulator and additional S
 This PCB is modified version of
 https://www.openhardware.io/view/17/Raspberry-Pi2-GPIO-interface-for-NRF24L01.
 
-May be used as MySensors gateway
+####Usage with MySensors
+May be used as MySensors.org gateway, see
 https://github.com/mysensors/Raspberry
+for details.
 
+#####Installation of MySensor's gateway
+``` bash
+ apt install git make g++ rsyslog
+ git clone "https://github.com/TMRh20/RF24.git"
+ cd RF24/
+ make all
+ cd ..
+ git clone "https://github.com/mysensors/Raspberry.git"
+ cd Raspberry/
+ make all
+ sudo make install
+ ```
+ 
 ####PWR_SEL jumper 
 selects power source:
 
