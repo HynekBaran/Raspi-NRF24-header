@@ -23,8 +23,6 @@ for details.
  make all
  sudo make install
  sudo make enable-gwserial
- # if using FHEM controller, allow it to access /dev/ttyMySensorsGateway
- usermod -a -G tty fhem
  ```
  
 #####Usage
