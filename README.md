@@ -27,7 +27,7 @@ for details.
  
 #####Usage
  
- Make your gateway as available as `/dev/ttyMySensorsGateway` by running
+ Make your gateway available as `/dev/ttyMySensorsGateway` by running
  ```bash
  sudo make enable-gwserial
  ```
