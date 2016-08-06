@@ -11,6 +11,7 @@ for details.
 
 #####Installation of MySensor's gateway
 ``` bash
+usermod -a -G tty fhem
  apt install git make g++ rsyslog
  git clone "https://github.com/TMRh20/RF24.git"
  cd RF24/
