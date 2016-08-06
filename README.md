@@ -20,6 +20,7 @@ for details.
  cd Raspberry/
  make all
  sudo make install
+ sudo make enable-gwserial
  ```
  
 ####PWR_SEL jumper 
