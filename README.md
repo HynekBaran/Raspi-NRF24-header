@@ -27,13 +27,17 @@ for details.
  
 #####Usage
  
- Your gateway as available as `/dev/ttyMySensorsGateway`
+ Make your gateway as available as `/dev/ttyMySensorsGateway` by running
+ ```bash
+ sudo make enable-gwserial
+ ```
 
  If accesing by some software controller, it has to have an access rights to above device.
  E.g., when using FHEM controller, allow it to access /dev/ttyMySensorsGateway by
 ``` bash
  usermod -a -G tty fhem
  ```
+ 
 ####PWR_SEL jumper (must be shorted correctly)
 Select power source by connecting a jumper to the proper pair of pins:
 ```
