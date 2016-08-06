@@ -29,11 +29,8 @@ for details.
  
  ####Software usage
  
- Your gateway as available as 
- ``` bash
- /dev/ttyMySensorsGateway
- ```
- 
+ Your gateway as available as `/dev/ttyMySensorsGateway`
+
  If accesing by some software controller, it has to have an access rights to above device.
  E.g., when using FHEM controller, allow it to access /dev/ttyMySensorsGateway by
 ``` bash
